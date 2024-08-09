@@ -60,3 +60,33 @@ button i {
 button i:hover {
   color: #f079a1;
 }
+
+section {
+  margin: 10%;
+
+}
+
+.h1 p {
+  font-size: 60px;
+  color: #585858;
+  font-weight: 900;
+}
+
+.h1 a {
+  text-decoration: underline dashed 2px #ababab;
+  text-underline-offset: 8px;
+  color: #585858;
+}
+
+.h1 a:hover {
+  color: #f079a1;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+
+.paragraph p {
+  margin-block: 3%;
+  color: #8e8a88;
+  line-height: 1.7;
+  font-size: 15px;
+}
