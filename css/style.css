@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+
+
+
 body {
   font-family: Arial, sans-serif;
 }
+
+
 
 header {
   background-color: white;
@@ -97,21 +102,21 @@ section {
   margin-block: 3%;
   color: #8e8a88;
   line-height: 1.7;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5%;
+  gap: 3% 5%;
   /* grid-template-rows: auto 100px; */
 }
 
 .card {
   /* Ensure the card is a containing block */
   position: relative;
-  width: 25em;
-  height: 23em;
+  width: 100%;
+  height: auto;
   background-size: cover;
   background-image: url(https://html5up.net/uploads/demos/phantom/images/pic01.jpg);
   border-radius: 3px;
@@ -173,4 +178,38 @@ svg {
   text-align: center;
   font-weight: 520;
   color: #fefefebf;
+}
+
+
+/* Media Query */
+@media (min-width: 150px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 0.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 3% 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
